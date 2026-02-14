@@ -200,7 +200,3 @@
      border: 3px solid white;
  }
 
- /* وقتی هاور میره رو عکس، چرخش متوقف بشه */
- .profile-image:hover {
-     animation-play-state: paused;
- }
