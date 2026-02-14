@@ -1,17 +1,57 @@
 .gitHubLink
 {
     text-decoration: none; 
-    margin-right: 20px;
-    color: #000;
+    margin-left: 25px;
+    color: #fff;
     transition: all ease-in .1s;
 }
 .gitHubLink:hover
 {
-    color: rgb(13, 110, 253);
+    color: rgb(25, 135, 84);
 }
 .header
 {
-    display: flex; 
+     min-height: 100vh;
+    background-color: rgb(51, 51, 51);
     padding: 30px 60px;
+}
+.diff-success
+{
+    color: #fff;
+    border: rgb(25, 135, 84) 1px solid;
+}
+.headr-section-two
+{
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    padding: 0 50px;
     justify-content: space-between;
+}
+.headr-section-two a 
+{
+    text-decoration: none;
+    color: #fff;
+}
+.headr-section-two h2 , .headr-section-two p
+{
+    color: #fff;
+
+}
+.headr-section-two img
+{
+    width: 60vh;
+}
+.UT
+{
+    transition: all ease-in .1s;
+    cursor: pointer;
+}
+.UT:hover
+{
+    color: aqua;
+}
+.buttons
+{
+    margin-top: 30px;
 }
