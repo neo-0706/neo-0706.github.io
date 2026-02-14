@@ -1,0 +1,17 @@
+.gitHubLink
+{
+    text-decoration: none; 
+    margin-right: 20px;
+    color: #000;
+    transition: all ease-in .1s;
+}
+.gitHubLink:hover
+{
+    color: rgb(13, 110, 253);
+}
+.header
+{
+    display: flex; 
+    padding: 30px 60px;
+    justify-content: space-between;
+}
