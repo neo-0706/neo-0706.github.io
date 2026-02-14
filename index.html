@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,74 +13,133 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="headr-section-one" style="display: flex; justify-content: space-between; ">
-            <div>
-                <a href="https://github.com/neo-0706" target="_blank" class="gitHubLink">
-                    Mohammad Hosein
-                </a>
-                <button type="button" class="btn btn-outline-success  diff-success" style="border-radius:50px  ;">
-                    رزومه ی من
-                </button>
+    <div class="card">
+        <!-- پروفایل -->
+        <div class="profile">
+            <div class="avatar">👨‍💻</div>
+            <h1>Mohammad Hosein Shahsavand Baghdadi</h1>
+            <div class="title">Fullstack  Developer</div>
+            <p class="bio">Frontend developer with 3+ years experience in JavaScript and HTML & CSS.</p>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-purple" onclick="window.open('https://github.com/neo-0706', '_blank')">📦
+                GitHub</button>
+            <button class="btn btn-purple"
+                onclick="window.open('https://www.linkedin.com/in/mohammad-hosein-shahsavand-baghdadi-1029473b0/', '_blank')">🔗
+                LinkedIn</button>
+            <button onclick="copyEmail()" class="btn btn-purple">📧 Copy Email</button>
+            <button onclick="downloadResume(this)" class="btn btn-purple"
+                onmouseover="this.style.background='#90EE90'; this.style.color='black'; this.style.transform='scale(1.05)'"
+                onmouseout="this.style.background='#9D4EDD'; this.style.color='white'; this.style.transform='scale(1)'">
+                📄 Download CV
+            </button>
+        </div>
+
+        <!-- مهارت‌ها -->
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+            <div class="skill-cat">
+                <h3>Frontend & Backend</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">FlexBox</span>
+                    <span class="skill-tag">CSS Grid</span>
+                </div>
             </div>
-            <div>
-                <button type="button" class="btn btn-success" style="border-radius: 40px;">تماس با من </button>
+            <div class="skill-cat">
+                <h3>Tools</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Sass</span>
+                </div>
             </div>
         </div>
-        <div class="headr-section-two">
-            <div style="width: 80vh;">
-                <h2>
-                    سلام من محمد حسین هستم
-                    <br>
-                    دانشجوی <span class="UT">دانشگاه تهران </span>
-                    <br>
-                </h2>
-                <p style="margin-top: 20px;">
-                    تابستان سال 1400 بود که پس از اندکی فعالیت در حوزه ی گرافیک با حوزه ی طراحی وب و فرانت اند آشنا شدم
-                    و آموزشی از سایت roocket.ir پیدا کردم که مربوط به آموزش HTML بود پس از یکی دو قسمت متوجه ی علاقه ی
-                    زیاد خودم به حوزه ی برنامه نویسی و طراحی وب شدم و الان که حدود 4 سال میگذره تجربه ها زیادی در این
-                    حوزه کسب کردم و هنوز هم به شدت مشتاق یادگیری هستم....
-                </p>
-                <div class="buttons">
-                    <button type="button" class="btn btn-outline-success" style="margin-left: 25px;">
-                        <a href="https://github.com/neo-0706">
-                            گیت هاب من
-                        </a>
-                    </button>
-                    <button type="button" class="btn btn-outline-success">
-                        <a href="">
-                            لینکدین من
-                        </a>
-                    </button>
-                </div>
-            </div>
-            <div>
-                <img src="./img/profile_Photo.png" alt="">
+
+        <!-- پروژه‌ها -->
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project">
+            <h3>python-project-semester-1</h3>
+            <p>A comprehensive, file-based Library Management System developed in Python. This project implements a
+                multi-role environment (Admin, Librarian, and Member) with persistent data storage using JSON files.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Json</span>
             </div>
         </div>
-    </header>
-    <div class="body">
-        <h2 style="padding : 60px;">
-            حوزه های فعالیت من:
-        </h2>
-        <div class="container">
-            <div class="row align-items-start">
-                <div class="col first-col">
-                    <h4 style="padding: 15px;">HTML:</h4>
-                    همونطوری که بالاتر گفتم اولین زبانی که من برای ورود به حوزه ی برنامه نویسی یاد گرفتم HTML بود
-                </div>
-                <div class="col second-col">
-                    One of three columns
-                </div>
-                <div class="col third-col">
-                    One of three columns
-                </div>
+        <div class="project">
+            <h3>openlibrary-books</h3>
+            <p>A Python script that fetches 50 books from the OpenLibrary API, filters books published after the year
+                2000, and saves the results in a CSV file.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">CSV</span>
             </div>
+        </div>
+        <div class="project">
+            <h3>word-tutorial-project</h3>
+            <p>Word Auto-Table Tutorial An interactive web-based tutorial for learning how to create automatic tables of
+                contents, figures, and lists in Microsoft Word. Built with pure HTML and CSS as a project for the
+                Computer Workshop course.</p>
+            <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+            </div>
+        </div>
+
+        <!-- فوتر -->
+        <div class="footer">
+            <p>© 2026 Mohammad Hosein Shahsavand Baghdadi</p>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script>
+        function copyEmail() {
+            // کپی کردن ایمیل
+            navigator.clipboard.writeText('mh.baghdadi86@gmail.com');
+
+            // تغییر متن دکمه
+            let btn = event.target;
+            let originalText = btn.innerHTML;
+            btn.innerHTML = '✅ Copied!';
+
+            // برگردوندن متن اصلی بعد از ۲ ثانیه
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+            }, 2000);
+        }
+        function downloadResume(btn) {
+            // دانلود فایل
+            const link = document.createElement('a');
+            link.href = 'Mohammad Hosein Shahsavand Baghdadi.pdf';  // اسم فایل رزومه تو
+            link.download = 'Mohammad Hosein Shahsavand Baghdadi.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // ذخیره متن اصلی
+            let originalText = btn.innerHTML;
+
+            // عوض کردن به تیک
+            btn.innerHTML = '✅ Downloaded!';
+            btn.style.background = '#90EE90';
+            btn.style.color = 'black';
+
+            // برگردوندن به حالت اول بعد ۲ ثانیه
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '#9D4EDD';
+                btn.style.color = 'white';
+            }, 2000);
+        }
+    </script>
 </body>
+
 
 </html>
